@@ -1,0 +1,7 @@
+.DS_Store
+.vscode/
+venv
+models
+alwaysai.project.json
+__pycache__
+*.wav
