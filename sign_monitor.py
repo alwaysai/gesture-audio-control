@@ -6,7 +6,7 @@ class SignMonitor:
     def __init__(self):
         self.start_signal = "five" # the label that triggers 'hey google'
         self.initial_audio = "hey_google.wav"
-        self.interval = 5 # the time between the 'hey google' and the command
+        self.interval = 4 # the time between the 'hey google' and the command
         self.timestamp = None # marks when the 'hey google' was triggered
         self.is_listening = False # whether or not 'hey google was triggered
         self.labels = [] # labels recieved after 'hey google'
@@ -41,7 +41,7 @@ class SignMonitor:
                 audio_file = self.actions[label]
                 if audio_file is not "skip":
                     print("playing " + str(audio_file))
-                    sa.WaveObject.from_wave_file(audio_file).play()
+                    sa.WaveObject.from_wave_file(audio_file).play().wait_done()
                 else:
                     print("no discernable signal received at this time")
         self.stop_listening()
