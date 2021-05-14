@@ -5,3 +5,4 @@ models
 alwaysai.project.json
 __pycache__
 *.wav
+alwaysai.target.json
