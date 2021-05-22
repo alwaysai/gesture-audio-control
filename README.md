@@ -1,5 +1,7 @@
 # Gesture Controlled Home Interaction App
-This app is designed to let you use your own custom gesture model to activate voice-activated technology, such as Alexa, Google Home, or Siri, using computer vision. After training your own gesture-detection model, using hand signals of your choice, you can use these signals to play audio files that give commands to smart tech. You'll need an alwaysAI account and to have alwayAI installed:
+This app is designed to let you use your own custom gesture model to activate voice-activated technology, such as Alexa, Google Home, or Siri, using computer vision. After training your own gesture-detection model, using hand signals of your choice, you can use these signals to play audio files that give commands to smart tech.
+
+You'll need an alwaysAI account and to have alwayAI installed:
 
 - [alwaysAI account](https://alwaysai.co/auth?register=true)
 - [alwaysAI CLI tools](https://dashboard.alwaysai.co/docs/getting_started/development_computer_setup.html)
@@ -14,7 +16,7 @@ To get you up and running, we've prepared a [dataset](https://www.alwaysai.co/do
 Then you can annotate your data, using [this guide](https://alwaysai.co/docs/model_training/data_annotation.html).
 
 ### Train your Model
- Then, follow the [training section](https://alwaysai.co/docs/model_training/quickstart.html#step-3-train-your-model) of our quickstart guide to train your own model. You'll find links to tips for data collection and annotation on that page as well.  
+Then, follow the [training section](https://alwaysai.co/docs/model_training/quickstart.html#step-3-train-your-model) of our quickstart guide to train your own model. You'll find links to tips for data collection and annotation on that page as well.  
 
 ### (Optional) Make Audio Files
 This step is needed if you want to use your gestures for interacting with 'smart' tech that responds to voice commands instead of gestures. However, you could use your gesture commands to turn on devices that are hooked up to an edge device, like a Raspberry Pi. You could also have it send an alert, by integrating your app with Twilio. You can check out the [alwaysAI blog](https://alwaysai.co/blog) for other tutorials and [Discord](https://discord.gg/rjDdRPT) is a great place to collaborate with users and the alwaysAI team for more ideas. 
