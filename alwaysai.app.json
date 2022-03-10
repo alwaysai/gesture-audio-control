@@ -3,7 +3,7 @@
     "start": "python app.py"
   },
   "models": {
-    "alwaysai/hand_detection": 5,
+    "alwaysai/hand_detection": 6,
     "alwaysai/mobilenet_ssd": 4
   }
 }
