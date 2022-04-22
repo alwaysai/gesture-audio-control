@@ -7,7 +7,7 @@ You'll need an alwaysAI account and to have alwayAI installed:
 - [alwaysAI CLI tools](https://dashboard.alwaysai.co/docs/getting_started/development_computer_setup.html)
 
 ## Requirements
-This app is intended to work on a model you've trained yourself! Follow the steps below before running your app. The alwaysAI support team is available on Discord to help you if you get stuck: https://discord.gg/rjDdRPT.
+This app is intended to work on a model you've trained yourself! Follow the steps below before running your app. The alwaysAI support team is available on Discord to help you if you get stuck: https://discord.gg/alwaysai.
 
 ### Collect a Dataset
 To get you up and running, we've prepared a [dataset](https://www.alwaysai.co/docs/_static/beta/hand_signs3.zip) that includes a few hundred images of an open hand, a hand showing a thumbs up, and a hand showing a peace sign. This app will work best using a model that has been trained on your own hand gestures, so we encourage you to add to this dataset, including images in the same gesture, and adding additional gestures (note that for new gestures, more images will be needed for a balanced dataset; see [this doc](https://alwaysai.co/docs/model_training/data_collection.html#data-capture-guidelines) for data collection tips). For speedy data collection, you can use this [image capture app](https://github.com/alwaysai/expanded-image-capture-dashboard) available on the alwaysAI GitHub. 
@@ -19,7 +19,7 @@ Then you can annotate your data, using [this guide](https://alwaysai.co/docs/mod
 Then, follow the [training section](https://alwaysai.co/docs/model_training/quickstart.html#step-3-train-your-model) of our quickstart guide to train your own model. You'll find links to tips for data collection and annotation on that page as well.  
 
 ### (Optional) Make Audio Files
-This step is needed if you want to use your gestures for interacting with 'smart' tech that responds to voice commands instead of gestures. However, you could use your gesture commands to turn on devices that are hooked up to an edge device, like a Raspberry Pi. You could also have it send an alert, by integrating your app with Twilio. You can check out the [alwaysAI blog](https://alwaysai.co/blog) for other tutorials and [Discord](https://discord.gg/rjDdRPT) is a great place to collaborate with users and the alwaysAI team for more ideas. 
+This step is needed if you want to use your gestures for interacting with 'smart' tech that responds to voice commands instead of gestures. However, you could use your gesture commands to turn on devices that are hooked up to an edge device, like a Raspberry Pi. You could also have it send an alert, by integrating your app with Twilio. You can check out the [alwaysAI blog](https://alwaysai.co/blog) for other tutorials and [Discord](https://discord.gg/alwaysai) is a great place to collaborate with users and the alwaysAI team for more ideas. 
 
 To make audio files on a Mac:
 Open QuickTime Player, select `File`, then `New Audio Recording`. Record your message and then save it with a name you choose and without altering the default suffix. Then use `ffmpeg` to create a `.wav` file. [Ffmpeg](https://ffmpeg.org) is a popular library for altering media files and we recommend users install it for annotation and other projects. Once you have it installed, open your command line interface tool and navigate to the directory with your audio file. Then execute the command `ffmpeg -i old_file.m4a new_file.wav`, substituting the appropriate name and suffix of your old file and whatever name you choose for your new file (as long as it ends in `.wav`!). You can delete the old file if you'd like. Make sure the name you choose is specified in the `self.actions` dictionary in the `sign_monitor.py` file.
@@ -81,6 +81,7 @@ stopping listening until recieve start signal
 ## Troubleshooting
 Docs: https://dashboard.alwaysai.co/docs/getting_started/introduction.html
 
-Community Discord: https://discord.gg/rjDdRPT
+Community Discord: https://discord.gg/alwaysai
 
 Email: support@alwaysai.co
+co
